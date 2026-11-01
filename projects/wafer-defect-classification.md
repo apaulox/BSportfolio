@@ -37,7 +37,7 @@ The displayed matrix contains **40 cases, 34 classified correctly**. All 10 DIE_
 
 ## Coursework recognition
 
-The course presentation's **“Top of the Class – Best Project Report”** slide lists **Hyunwoo Chung and Junseo Kim as runner-up (second place), with 99.0%**. This is a ranking for the project report, rather than a separate model-performance leaderboard.
+The course presentation's **“Top of the Class – Best Project Report”** slide lists **Hyunwoo Chung and Junseo Kim as runner-up (second place), with 99.0%**. This is a ranking for the project report, not the whole coursework. At terms of the whole coursework I ended up with third place of overall.
 
 ![Cropped photo of the classroom screen showing the Best Project Report runner-up listing](../assets/wafer-defect/coursework-report-runner-up-cropped.png)
 
