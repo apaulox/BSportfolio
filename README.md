@@ -8,8 +8,8 @@ This repository is a **research-oriented portfolio**, not a release of all exper
 
 ## Selected Projects
 
-### 1. Audio-Visual Spatial Correspondence Learning
-**Research focus:** Visually guided mono-to-binaural audio generation and complementary semantic/spatial representations.
+### 1. Binaural Audio Generation via Audio Visual Multi head Aggregation
+**Research focus:** Visually guided mono-to-binaural audio generation with separate complementary semantic/spatial representations.
 
 - Investigated separate semantic (image–mono audio) and spatial (image–binaural cues) correspondence objectives.
 - Explored frozen DINOv2/DINOv3 visual backbones, dense contrastive similarities, multi-head architectures, and visually conditioned reconstruction.
@@ -29,7 +29,7 @@ This repository is a **research-oriented portfolio**, not a release of all exper
 
 [Project overview](projects/music-deepfake-detection.md)
 
-### 3. Wafer Defect Classification
+### 3. Wafer Defect Classification in scarse data situations
 **Research focus:** Visual defect recognition under dataset/domain differences.
 
 - Trained and compared ResNet and EfficientNet image classifiers on five wafer image classes.
