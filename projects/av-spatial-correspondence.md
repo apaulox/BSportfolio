@@ -7,7 +7,7 @@ This page is a concise public research showcase, adapted from our final graduati
 
 ## Method at a glance
 
-![Model overview](../assets/av-spatial/model-overview.svg)
+![Model overview](../assets/av-spatial/framework-from-ppt.png)
 
 A frozen **DINOv3 ViT-B/16** extracts video patch features. A trainable shared visual projection branches into semantic and spatial correspondence heads. Mono audio supplies semantic features; **ground-truth stereo audio is used as auxiliary supervision for the spatial head during training**. A visually conditioned U-Net predicts a complex difference spectrogram; the generated left/right channels are reconstructed from the mono sum and predicted difference. Crucially, the generation decoder does **not** take the ground-truth stereo features as input.
 
