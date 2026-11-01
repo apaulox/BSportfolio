@@ -17,26 +17,27 @@ This repository is a **research-oriented portfolio**, not a release of all exper
 - Studied what the learned heads encode using retrieval tasks and visual/audio interventions.
 
 **Selected evidence:** In one recorded seen-category ablation, a multi-head product-then-pool configuration yielded **0.8173 STFT distance** and **0.1284 envelope distance**. These metrics are specific to that evaluation setup; a separate category-unseen test showed a substantial generalization gap.
-
+Please click the under link for description
 [Project overview and limitations](projects/av-spatial-correspondence.md)
 
-### 2. Music Deepfake Detection
-**Research focus:** Detecting AI-generated or manipulated music and vocals.
-
-- Investigated speech and music detection components, including pretrained audio representations and source separation.
-- Experimented with EAT/XLS-R-based pipelines and HTDemucs-based input processing, fusion, and inference packaging.
-- Emphasized reproducible evaluation, controlled comparisons, and deployment constraints.
-
-[Project overview](projects/music-deepfake-detection.md)
-
-### 3. Wafer Defect Classification in scarse data situations
+### 2. Wafer Defect Classification in scarse data situations
 **Research focus:** Visual defect recognition under dataset/domain differences.
 
 - Trained and compared ResNet and EfficientNet image classifiers on five wafer image classes.
 - Studied the value of adding source-domain training data while evaluating on a target-domain validation set.
 - Explored augmentation and model-capacity tradeoffs.
-
+Please click the under link for description
 [Project overview](projects/wafer-defect-classification.md)
+
+### 3. Music Deepfake Detection
+**Research focus:** Detecting AI-generated or manipulated music and vocals.
+
+- Investigated speech and music detection components, including pretrained audio representations and source separation.
+- Experimented with EAT/XLS-R-based pipelines and HTDemucs-based input processing, fusion, and inference packaging.
+- Emphasized reproducible evaluation, controlled comparisons, and deployment constraints.
+Please click the under link for description
+[Project overview](projects/music-deepfake-detection.md)
+
 
 ## Research Interests
 
