@@ -16,6 +16,22 @@ A frozen **DINOv3 ViT-B/16** extracts video patch features. A trainable shared v
 - **Reconstruction:** a spatial visual feature is pooled and projected to **784** conditioning channels, combined with the **512**-channel mono bottleneck in the decoder.
 - **Training objective:** difference-spectrogram MSE + semantic InfoNCE + spatial InfoNCE.
 
+## Actual framework and training flow
+
+The model uses a frozen DINOv3 ViT-B/16 to extract a 768-channel, 14 x 28 visual patch map. A trainable shared projection feeds separate 384-channel semantic and spatial branches.
+
+- Semantic branch: image patches are matched with mono-audio embeddings using symmetric InfoNCE.
+- Spatial branch: image patches are matched with stereo cues, including left/right magnitudes and interaural phase features, using an additional contrastive objective.
+- Reconstruction branch: the spatial visual slice is pooled to 7 x 14, projected to 8 channels, and flattened to 784 features. It joins the 512-channel mono encoder bottleneck, producing 1,296 decoder input channels. A U-Net predicts the L-R difference spectrogram, and the mono sum is used to reconstruct the two channels.
+
+**Ground-truth binaural audio supplies training supervision, not an input to the generation decoder.** For detailed architecture, the full framework illustration is in the final presentation, especially slide 30.
+
+## What the spatial head does NOT prove
+
+The semantic and spatial heads show complementary tendencies, but the observed separation is **modest, not dramatic**. In same-category exact-clip retrieval, the spatial head reaches 56.1% versus 43.9% for semantic. This is retrieval, not direct source localization.
+
+In a separate coarse-position audit, exact-cell accuracy was **40.2% for spatial versus 40.5% for semantic**: effectively no improvement. Allowing one neighboring cell increases the numbers to 88.9% and 79.4%, respectively, but this result depends on a tolerant metric and exploratory AI-assigned position references. Some L/R-swap and image-flip cases also fail. The results therefore do not establish full disentanglement or reliable localization.
+
 ## Reconstruction ablation
 
 **Same recorded 104-clip seen-category evaluation** (normalization enabled; one shared seed; lower is better):
