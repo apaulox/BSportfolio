@@ -71,7 +71,6 @@ The final graduation presentation includes a video example and a **QR code** lin
 
 The presentation contains playable video media; the video files are hosted in the linked Drive folder rather than this public portfolio.
 
-> **Access note:** Google Drive viewing permissions have not been verified for anonymous visitors. Before sharing this page with a prospective supervisor, set the demo folder and its relevant files to **Anyone with the link → Viewer**, if you have permission to make them public. A QR code does not bypass Drive permissions.
 
 ## Generalization and limitations
 
