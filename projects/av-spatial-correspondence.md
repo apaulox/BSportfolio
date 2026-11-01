@@ -51,17 +51,14 @@ In the slide 18 masking visualization, red patches mark the regions whose remova
 
 **Interpretation:** The tested multi-head/product-then-pool configuration achieved the lowest recorded reconstruction errors in this comparison. However, the single/multi comparisons also change auxiliary supervision and decoder feature routing, so the improvement **cannot be attributed to head count alone**.
 
-**Split correction:** The historical file named `unseen1` actually corresponds to a **seen-category** split (832 train / 104 validation / 104 test clips). The 0.817257 value is *not* evidence of unseen-category generalization.
+**Split correction:** The historical file named `unseen1` actually corresponds to a **seen-category** split (832 train / 104 validation / 104 test clips). The 0.817257 value is *not* evidence of unseen-category generalization. This problem came from an initial problem we thought, but later realizing it was a trivial problem. 
 
 ## What did the two heads learn?
 
 ![Other-clip instrument-category retrieval heatmaps for the semantic and spatial heads](../assets/av-spatial/heatmap-category-retrieval.png)
 
-On a frozen-checkpoint diagnostic involving **104 clips × 3 audio crops**, the semantic head was better at other-clip instrument-category retrieval (**90.0%** versus **15.0%**), while the spatial head was better at identifying the exact clip within the same category (**56.1%** versus **43.9%**). These are retrieval diagnostics, not direct measures of spatial localization.
+On a frozen-checkpoint diagnostic involving **104 clips × 3 audio crops**, the semantic head was better at other-clip instrument-category retrieval (**90.0%** versus **15.0%**), while the spatial head was better at identifying the exact clip within the same category (**56.1%** versus **43.9%**). Though, there were some limitations, as the spatial head has not that much of dominance in identifying the exact clip within the category.
 
-Additional image-flip / L–R-swap interventions showed a directional preference in some settings: the spatial head favored original binaural audio for **94.9%** of original-image crops, and swapped audio for **65.7%** of flipped-image crops. There are meaningful failure cases; this does **not** establish full semantic/spatial disentanglement.
-
-![Spatial direction intervention: per-clip score margins for original and flipped video](../assets/av-spatial/spatial-direction-intervention.png)
 
 ## Video demo
 
@@ -69,7 +66,6 @@ The final graduation presentation includes a video example and a **QR code** lin
 
 ![Video demo frame showing the source performer](../assets/av-spatial/demo-thumbnail.png)
 
-![QR code from the presentation for the audio demos](../assets/av-spatial/demo-qr.png)
 
 **[Open the audio-visual binaural-generation demos](https://drive.google.com/drive/folders/1CDPN2AykF32mWWVIRzhfJ1IwfTWcGGyq)**
 
