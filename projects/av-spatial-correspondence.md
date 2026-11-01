@@ -39,6 +39,16 @@ On a frozen-checkpoint diagnostic involving **104 clips × 3 audio crops**, the 
 
 Additional image-flip / L–R-swap interventions showed a directional preference in some settings: the spatial head favored original binaural audio for **94.9%** of original-image crops, and swapped audio for **65.7%** of flipped-image crops. There are meaningful failure cases; this does **not** establish full semantic/spatial disentanglement.
 
+## Video demo
+
+The final graduation presentation includes a **QR code** linking to a Google Drive folder of demonstration materials:
+
+**[Open the audio-visual binaural-generation demos](https://drive.google.com/drive/folders/1CDPN2AykF32mWWVIRzhfJ1IwfTWcGGyq)**
+
+The link is taken directly from the QR code embedded in the final presentation. The presentation also contains playable video media, but those files have **not** been uploaded to this public portfolio. Please use headphones when listening to stereo/binaural examples.
+
+> **Access note:** Google Drive viewing permissions have not been verified for anonymous visitors. Before sharing this page with a prospective supervisor, set the demo folder and its relevant files to **Anyone with the link → Viewer**, if you have permission to make them public. A QR code does not bypass Drive permissions.
+
 ## Generalization and limitations
 
 A follow-up *true category-unseen* evaluation (Category A training, Category B held out) identified a persistent B-category gap. On the same 29 B-category test clips, the seen-training model recorded **0.7041 STFT**, versus **0.8502 STFT** for the A-only training model. Training-set sizes and update counts also differed, so this is an exploratory comparison rather than a strictly controlled causal test.
