@@ -55,9 +55,13 @@ In the slide 18 masking visualization, red patches mark the regions whose remova
 
 ## What did the two heads learn?
 
+![Presentation slide comparing semantic and spatial head responses to mono and binaural audio](../assets/av-spatial/project-presentation.png)
+
+The slide shows complementary behavior under **different probes**: mono-audio instrument queries shift the semantic response toward the corresponding instrument in a multi-source scene, while binaural input produces a spatial response around a performer in a single-clip frame. The accompanying results favor semantic for other-clip instrument-category retrieval (**90.0% vs 15.0%**) and spatial for position within one neighboring 14 × 7 cell (**81.7% vs 59.2%**). Together, the visual examples and measurements support distinct tendencies, while the differing test conditions and exploratory position references limit how strongly we can interpret the separation.
+
 ![Other-clip instrument-category retrieval heatmaps for the semantic and spatial heads](../assets/av-spatial/heatmap-category-retrieval.png)
 
-On a frozen-checkpoint diagnostic involving **104 clips × 3 audio crops**, the semantic head was better at other-clip instrument-category retrieval (**90.0%** versus **15.0%**), while the spatial head was better at identifying the exact clip within the same category (**56.1%** versus **43.9%**). Though, there were some limitations, as the spatial head has not that much of dominance in identifying the exact clip within the category.
+On a frozen-checkpoint diagnostic involving **104 clips × 3 audio crops**, the semantic head was better at other-clip instrument-category retrieval (**90.0%** versus **15.0%**), while the spatial head was better at identifying the exact clip within the same category (**56.1%** versus **43.9%**). The spatial head’s exact-clip advantage is moderate, so this result alone does not show complete separation of the two representations.
 
 
 ## Video demo
@@ -82,4 +86,4 @@ A follow-up *true category-unseen* evaluation (Category A training, Category B h
 
 - Collaborative graduation project by **Hyunwoo Chung and Jungwon Lee**; contributions should be described at the project level unless individually verified.
 - Methodological foundations include [2.5D Visual Sound / FAIR-Play](https://github.com/facebookresearch/2.5D-Visual-Sound), [DenseAV](https://github.com/mhamilton723/DenseAV), [DINOv3](https://github.com/facebookresearch/dinov3), and [CCStereo](https://github.com/SonyResearch/CCStereo).
-- The framework and result images above are extracted from the **30 October 2026 graduation presentation** (slides 18, 19, 30, 44, and 45). The full slide deck and private implementation are not published here. Dataset recordings and pretrained weights are not redistributed.
+- The framework and result images above are extracted from the **30 October 2026 graduation presentation** (slides 16, 18, 19, 30, 44, and 45). The full slide deck and private implementation are not published here. Dataset recordings and pretrained weights are not redistributed.
