@@ -76,11 +76,13 @@ The final graduation presentation includes a video example and a **QR code** lin
 The presentation contains playable video media; the video files are hosted in the linked Drive folder rather than this public portfolio.
 
 
-## Generalization and limitations
+## Limitations and Future work
 
-A follow-up *true category-unseen* evaluation (Category A training, Category B held out) identified a persistent B-category gap. On the same 29 B-category test clips, the seen-training model recorded **0.7041 STFT**, versus **0.8502 STFT** for the A-only training model. Training-set sizes and update counts also differed, so this is an exploratory comparison rather than a strictly controlled causal test.
+The semantic and spatial heads exhibit contrasting behavior, but their roles are not fully separated. The semantic head shows strong contrast between instrument categories (90.0% vs 15.0%), while the spatial head has a more modest advantage in same-category exact-clip retrieval (56.1% vs 43.9%). Because these are different tests, they do not establish precise localization or complete separation of the two heads.
 
-**Takeaway:** The project demonstrates a structured research cycle—model design, ablation, diagnostic probing, and evaluation correction—while leaving open questions about robust category generalization and the causal roles of each learned representation.
+The localization evidence is also approximate. The heatmaps show which visual patches affect reconstruction, rather than verified sound-source positions. The 14 × 7 position audit uses AI-assigned performer centers, and its neighboring-cell score allows considerable positional error. Some left/right swap and image-flip cases fail.
+
+Future work would use verified sound-source positions and controlled ablations to test the heads more directly. We could also evaluate self-attention within each modality and cross-attention between audio and visual features as possible ways to mitigate correspondence errors, then measure whether they improve localization and binaural reconstruction.
 
 ## Research provenance
 
