@@ -2,9 +2,9 @@
 
 **Undergraduate Research | Audio, Speech, Computer Vision & Multimodal Learning**
 
-I am an undergraduate student in the Department of Electronic Engineering at Hanyang University, interested in learning representations from audio and visual signals. My current interests include **audio-visual correspondence**, **spatial audio**, **self-supervised representation learning**, and **robust audio classification**.
+I am an undergraduate student in the Department of Electronic Engineering at Hanyang University, interested in learning representations from audio and visual signals. My current interests include **audio-visual correspondence**, **spatial audio**, **self-supervised representation learning**, and **contrastive learning along multimodal fields**.
 
-This repository is a **research-oriented portfolio**, not a release of all experimental code. It highlights research questions, methodology, evidence, and limitations. Some implementation repositories remain private while results and permissions are reviewed.
+This repository is a **research-oriented portfolio**, not a release of all experimental code. It highlights research questions, methodology, evidence, and limitations I experienced. Some implementation repositories remain private while results and permissions are reviewed.
 
 ## Selected Projects
 
@@ -38,18 +38,26 @@ Please click the under link for description
 Please click the under link for description
 [Project overview](projects/music-deepfake-detection.md)
 
-
+### 4. Other projects comprised from Undergraduate courses
+- Digital Signal Processing — EMG-Controlled Robot Car: Built a LabVIEW control system that converted muscle signals into commands for a two-motor robot. Amplified and filtered the EMG signals, then used activation thresholds and PWM to control direction and speed. The final track demonstration placed third in class.
+- Fundamentals of Mobility Technology and Industry Overview — UWB Localization: Worked in a four-person team to estimate position from UWB channel impulse response, time-of-arrival, and anchor data. Compared neural network approaches, including a few-shot experiment that reported 1.0978 m RMSE.
+- Linear Algebra — Face Recognition with Eigenfaces: Applied the eigenfaces method to represent facial images in a lower-dimensional space for face recognition.
+- Computer Architecture — Pipelined MIPS and Hazard Detection: Implemented a five-stage MIPS processor in Verilog. Designed hazard logic for load-use stalls and branch/jump flushes, added forwarding paths, and adjusted register-file timing to keep instructions moving correctly through the pipeline.
 ## Research Interests
 
 - Audio-visual and cross-modal representation learning
 - Speech/audio signal processing and spatial audio
 - Self-supervised and contrastive learning
-- Robust classification, generalization, and experimental methodology
+  
+## Future Interests (fields I would like to study)
+- 4D Gaussian Splatting for representing and rendering dynamic 3D scenes over time
+- Semantic Acoustic Imaging for Sound Event Localization and Detection from Spatial Audio and Audiovisual Scenes (DCASE 2026 Task3)
+- Lightweight models/algorithms and few-shot learning for image–audio retrieval
 
 ## Technical Background
 
-**Languages & tools:** Python, PyTorch, Linux/WSL, Git, CUDA-based GPU workflows  
-**Methods:** STFT-based audio processing, contrastive objectives, transformer visual backbones, convolutional networks, ablations, retrieval/evaluation analysis
+**Languages & tools:** Python, PyTorch, Linux/WSL, CUDA-based GPU workflows  
+**Foundational Coursework** Random process, Information theory, Linear Algebra, Introduction to Artificial intelligence
 
 ## Code, Provenance & Reproducibility
 
