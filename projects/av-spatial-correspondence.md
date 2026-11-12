@@ -66,14 +66,9 @@ On a frozen-checkpoint diagnostic involving **104 clips × 3 audio crops**, the 
 
 ## Video demo
 
-The final graduation presentation includes a video example and a **QR code** linking to a Google Drive folder of demonstration materials. Use headphones for the stereo/binaural comparison.
+[![BinMHA demo preview showing the performance and left- and right-ear spectrograms](../assets/av-spatial/binmha-demo-preview.jpg)](../assets/av-spatial/binmha-demo.mp4)
 
-![Video demo frame showing the source performer](../assets/av-spatial/demo-thumbnail.png)
-
-
-**[Open the audio-visual binaural-generation demos](https://drive.google.com/drive/folders/1CDPN2AykF32mWWVIRzhfJ1IwfTWcGGyq)**
-
-The presentation contains playable video media; the video files are hosted in the linked Drive folder rather than this public portfolio.
+**[Watch the BinMHA demo](../assets/av-spatial/binmha-demo.mp4)** · Use headphones to hear the binaural audio.
 
 
 ## Limitations and Future work
