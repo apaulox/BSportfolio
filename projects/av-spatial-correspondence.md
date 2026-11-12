@@ -68,7 +68,7 @@ On a frozen-checkpoint diagnostic involving **104 clips × 3 audio crops**, the 
 
 [![BinMHA demo preview showing the performance and left- and right-ear spectrograms](../assets/av-spatial/binmha-demo-preview.jpg)](../assets/av-spatial/binmha-demo.mp4)
 
-**[Watch the BinMHA demo](../assets/av-spatial/binmha-demo.mp4)** · Use headphones to hear the binaural audio.
+**[Watch the BinMHA demo](../assets/av-spatial/binmha-demo.mp4)** · **[Watch on YouTube](https://youtu.be/ElzLqGOiBNk)** · Use headphones to hear the binaural audio.
 
 
 ## Limitations and Future work
