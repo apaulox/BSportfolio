@@ -51,21 +51,16 @@ Please click the under link for description
   
 ## Future Interests (fields I would like to study)
 - 4D Gaussian Splatting for representing and rendering dynamic 3D scenes over time
-- Semantic Acoustic Imaging for Sound Event Localization and Detection from Spatial Audio and Audiovisual Scenes (DCASE 2026 Task3)
-- Lightweight models/algorithms and few-shot learning for image–audio retrieval
+- Causal Inference in Machine Learning & Time series cases
 
 ## Technical Background
 
-**Languages & tools:** Python, PyTorch, Linux/WSL, CUDA-based GPU workflows  
+**Languages & tools:** Python, PyTorch, Linux/WSL
 **Foundational Coursework** Random process, Information theory, Linear Algebra, Introduction to Artificial intelligence
 
 ## Code, Provenance & Reproducibility
 
 - This public portfolio contains summaries rather than private datasets, model weights, or confidential training artifacts.
-- Results are reported with their evaluation contexts; a seen-category result is **not** evidence of category-unseen generalization.
 - Research built on prior work is described as such, and original implementations should be credited to their respective authors.
-- **Related public reference implementation:** [CCStereo](https://github.com/apaulox/CCStereo). This repository contains a copy of the CCStereo research implementation; it should **not** be interpreted as my original publication.
-- Project code and additional experiment material may be shared when appropriate permissions and release reviews are complete.
-
 ---
 *This portfolio is maintained for academic research introductions and graduate laboratory applications.*
