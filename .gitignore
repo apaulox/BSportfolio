@@ -1,0 +1,23 @@
+# Never commit local credentials or research artifacts
+.env
+.env.*
+!.env.example
+.netrc
+*.pem
+*.key
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+wandb/
+runs/
+checkpoints/
+outputs/
+data/
+datasets/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.hdf5
+*.zip
